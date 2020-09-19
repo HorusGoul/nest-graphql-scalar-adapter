@@ -55,18 +55,18 @@ export function createFromGraphQLScalar<T = unknown, K = unknown>({
 }: CreateScalarParams): Type<CustomScalar<T, K>> {
   type ScalarType = CustomScalar<T, K>;
 
-  const className = `${name}AdaptedScalar`
+  const className = `${name}AdaptedScalar`;
 
   /**
    * We're creating a proxy object with the purpose of giving
    * this class a dynamic name based on the input.
-   * 
+   *
    * We need to do this to prevent Nest.js from thinking all scalars
    * are the same (we were using a named class before and we could only register
    * one scalar using this function).
-   * 
-   * Check out the `@Scalar` implementation: 
-   * https://github.com/nestjs/graphql/blob/e2649df12c937eff9a93b34d7ad6da6673573318/lib/decorators/scalar.decorator.ts#L24-L25  
+   *
+   * Check out the `@Scalar` implementation:
+   * https://github.com/nestjs/graphql/blob/e2649df12c937eff9a93b34d7ad6da6673573318/lib/decorators/scalar.decorator.ts#L24-L25
    */
   const proxyObject = {
     [className]: class {
@@ -95,7 +95,7 @@ export function createFromGraphQLScalar<T = unknown, K = unknown>({
   const decorated = tslib.__decorate(
     // @ts-ignore
     [Scalar(name, type)],
-    proxyObject[className],
+    proxyObject[className]
   );
 
   return decorated;
