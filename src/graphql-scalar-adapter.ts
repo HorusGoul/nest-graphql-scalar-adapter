@@ -60,19 +60,19 @@ export function createFromGraphQLScalar<T = unknown, K = unknown>({
     parseValue(
       ...params: Parameters<ScalarType['parseValue']>
     ): ReturnType<ScalarType['parseValue']> {
-      return scalar.parseValue(...params);
+      return scalar.parseValue.bind(scalar)(...params);
     }
 
     serialize(
       ...params: Parameters<ScalarType['serialize']>
     ): ReturnType<ScalarType['serialize']> {
-      return scalar.serialize(...params);
+      return scalar.serialize.bind(scalar)(...params);
     }
 
     parseLiteral(
       ...params: Parameters<ScalarType['parseLiteral']>
     ): ReturnType<ScalarType['parseLiteral']> {
-      return scalar.parseLiteral(...params);
+      return scalar.parseLiteral.bind(scalar)(...params);
     }
   }
 

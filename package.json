@@ -14,11 +14,11 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "tsdx watch --target=node",
+    "build": "tsdx build --target=node",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsdx build --target=node"
   },
   "peerDependencies": {
     "@nestjs/graphql": "^7.6.0"
