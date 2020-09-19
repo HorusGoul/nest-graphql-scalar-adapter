@@ -1,5 +1,7 @@
 {
   "name": "nest-graphql-scalar-adapter",
+  "description": "A better way to import external GraphQL scalars into your Nest.js projects.",
+  "keywords": ["nest", "node", "graphql", "nestjs", "scalar", "adapter", "typescript"],
   "version": "1.0.0",
   "license": "MIT",
   "author": "Horus Lugo <horusgoul@gmail.com>",
