@@ -21,7 +21,8 @@
     "prepare": "tsdx build --target=node"
   },
   "peerDependencies": {
-    "@nestjs/graphql": "^7.6.0"
+    "@nestjs/graphql": "^7.6.0",
+    "tslib": "^2.0.1"
   },
   "husky": {
     "hooks": {
