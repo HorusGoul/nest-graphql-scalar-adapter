@@ -17,12 +17,16 @@
   <a href="https://coveralls.io/github/HorusGoul/nest-graphql-scalar-adapter?branch=main" target="\_parent">
     <img src="https://coveralls.io/repos/github/HorusGoul/nest-graphql-scalar-adapter/badge.svg?branch=main" alt="Coverage" />
   </a>
+  <a href="https://nestjs.com">
+    <img alt="Nest.js Version" src="https://img.shields.io/github/package-json/dependency-version/horusgoul/nest-graphql-scalar-adapter/dev/@nestjs/core" />
+  </a>
   <a href="https://github.com/horusgoul/nest-graphql-scalar-adapter" target="\_parent">
-    <img alt="" src="https://img.shields.io/github/stars/horusgoul/nest-graphql-scalar-adapter.svg?style=social&label=Star" />
+    <img alt="Star the project" src="https://img.shields.io/github/stars/horusgoul/nest-graphql-scalar-adapter.svg?style=social&label=Star" />
   </a>
   <a href="https://twitter.com/horusgoul" target="\_parent">
-    <img alt="" src="https://img.shields.io/twitter/follow/horusgoul.svg?style=social&label=Follow" />
+    <img alt="Follow me on Twitter" src="https://img.shields.io/twitter/follow/horusgoul.svg?style=social&label=Follow" />
   </a>
+  
 </p>
 
 ## Description
