@@ -2,14 +2,17 @@ import 'reflect-metadata';
 import { createFromGraphQLScalar } from '../src';
 import { Test, TestingModule } from '@nestjs/testing';
 import JSONType from 'graphql-type-json';
+import { GraphQLScalarType } from 'graphql';
 
 describe('GraphQL Scalar Adapter', () => {
   it('works', async () => {
     const JSONScalar = createFromGraphQLScalar({ scalar: JSONType });
-    const JSONScalar2 = createFromGraphQLScalar({
-      scalar: JSONType,
-      name: 'JSON2',
+
+    const Scalar2 = createFromGraphQLScalar({
+      scalar: new GraphQLScalarType({ name: 'Scalar2', description: null }),
+      name: 'Scalar2',
     });
+
     const JSONScalar3 = createFromGraphQLScalar({
       scalar: JSONType,
       name: 'JSON3',
@@ -17,7 +20,7 @@ describe('GraphQL Scalar Adapter', () => {
     });
 
     const app: TestingModule = await Test.createTestingModule({
-      providers: [JSONScalar, JSONScalar2, JSONScalar3],
+      providers: [JSONScalar, Scalar2, JSONScalar3],
     }).compile();
 
     const scalar = app.get(JSONScalar);
