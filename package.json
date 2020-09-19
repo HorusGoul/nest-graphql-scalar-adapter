@@ -1,6 +1,6 @@
 {
   "name": "nest-graphql-scalar-adapter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "author": "Horus Lugo <horusgoul@gmail.com>",
   "main": "dist/index.js",
