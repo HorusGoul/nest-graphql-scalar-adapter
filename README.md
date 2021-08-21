@@ -5,10 +5,10 @@
 # nest-graphql-scalar-adapter
 
 <p>
-  <a href="https://www.npmjs.com/packages/nest-graphql-scalar-adapter" target="\_parent">
+  <a href="https://www.npmjs.com/package/nest-graphql-scalar-adapter" target="\_parent">
     <img src="https://img.shields.io/npm/v/nest-graphql-scalar-adapter.svg" alt="NPM Version" />
   </a>
-  <a href="https://www.npmjs.com/packages/nest-graphql-scalar-adapter" target="\_parent">
+  <a href="https://www.npmjs.com/package/nest-graphql-scalar-adapter" target="\_parent">
     <img src="https://img.shields.io/npm/l/nest-graphql-scalar-adapter.svg" alt="Package License" />
   </a>
   <a href="https://github.com/horusgoul/nest-graphql-scalar-adapter/actions?query=CI" target="\_parent">
